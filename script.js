@@ -1,5 +1,5 @@
 //your JS code here. If required.
-let str=prompt("Enter a string")
+//let str=prompt("Enter a string")
 let map=new Map();
 for(let i=0;i<str.length;i++){
 	let freq=1;
@@ -10,11 +10,15 @@ for(let i=0;i<str.length;i++){
 	map.set(str[i],freq)
 }
 let ans;
-map.forEach((value,key)=>{
-	if (value==1) {
-		ans=key;
-		break;
-	}
-})
+for (let i = 0; i < str.length; i++) {
+		let freq=map.get(str[i])
+		if (freq==1) {
+			ans=str[i];
+			break;
+			
+		}
+}
+
+
 alert(ans)
 
