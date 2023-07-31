@@ -16,5 +16,5 @@ map.forEach((value,key)=>{
 		break;
 	}
 })
-console.log(ans)
+alert(ans)
 
